@@ -18,11 +18,11 @@ def run_game():
     sound= 'resources/back_sound.mp3'
     pygame.mixer.init()
     pygame.mixer.music.load(sound)
-    pygame.mixer.music.play(loops =-1)
+    pygame.mixer.music.play(-1)
     pygame.event.wait()
     screen=pygame.display.set_mode((settings.width,settings.height),0,32)
 
-    pygame.display.set_caption("Pop Bub")
+    pygame.display.set_caption("PopBob")
     clock =pygame.time.Clock()
     scoreboard = Scoreboard(screen, settings)
     play_button = Button(screen, settings.width/2-settings.button_width/2,
