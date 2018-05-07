@@ -5,7 +5,7 @@ class Settings():
         # screen parameters
         self.width=800
         self.height=600
-        self.bg_image = pygame.image.load('resources/back_pop_ga.jpg')
+        self.bg_image = pygame.image.load('resources/backk.jpg')
         self.scoreboard_height=50
         # game status
         self.game_active=False

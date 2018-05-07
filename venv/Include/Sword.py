@@ -6,7 +6,7 @@ class Sword(Sprite):
 
         Sprite.__init__(self)
         self.screen=screen
-        self.image=pygame.image.load('resources/sword_75px.png').convert_alpha()
+        self.image=pygame.image.load('resources/spectula.png').convert_alpha()
         self.image_w, self.image_h = self.image.get_size()
 
         self.x_position = self.screen.get_width() / 2

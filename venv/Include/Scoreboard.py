@@ -16,9 +16,9 @@ class Scoreboard(Sprite):
         self.sb_height = settings.scoreboard_height
         self.sb_width = self.screen.get_width()
         self.rect = pygame.Rect(0,0,self.sb_width, self.sb_height)
-        self.bg_color=(100,100,100)
+        self.bg_color=(51,153,255)
         self.text_color=(225,225,225)
-        self.font = pygame.font.SysFont('Arial',18)
+        self.font = pygame.font.SysFont('Serif',20)
 
 
         self.x_popped_pos, self.y_popped_pos=20.0, 10.0
@@ -50,7 +50,7 @@ class Scoreboard(Sprite):
         self.set_ratio_string()
         self.popped_ratio_image = self.font.render(self.popped_ratio_string, True, self.ratio_text_color)
 
-        self.points_string = "Points per Balloon: " +str (self.settings.points_per_hit)
+        self.points_string = "Points per Bubble: " +str (self.settings.points_per_hit)
         self.points_image = self.font.render(self.points_string, True, self.text_color)
 
     def set_ratio_string(self):

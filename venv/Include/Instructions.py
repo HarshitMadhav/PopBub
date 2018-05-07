@@ -10,12 +10,12 @@ class Instructions(Sprite):
         self.screen = screen
         self.settings = settings
 
-        self.text_color = (30, 30, 30)
-        self.font = pygame.font.SysFont('Arial', 24)
+        self.text_color =(255,255,0)
+        self.font = pygame.font.SysFont('Serif', 24)
 
         # Store the set of instructions
-        self.instr_lines = ["Move your mouse to swipe the sword back and forth."]
-        self.instr_lines.append("Or, click on the sword to grab it.")
+        self.instr_lines = ["Move your mouse to swipe the spectula back and forth."]
+        self.instr_lines.append("Or, click on the spectula to grab it.")
         self.instr_lines.append("But keep your pop rate above 90%!")
         self.instr_lines.append("----Please spare the fishes!!----")
         self.instr_lines.append("Letting a fish live earns several bubbles' worth of points;")
